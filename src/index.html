@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/docs/icon.png"/>
     <title>Flying Wizard</title>
-    <script src="script.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <script src="flyingwizard.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <h1>Flying Wizard</h1>
-        <div class="score-container">
-            <div class="best-score"></div>
-            <div class="current-score"></div>
-        </div>
-    </header>     
+    <div class="background"></div>
+    <img src="/docs/Wizard-2.png" alt="wizard-img" class="wizard" id="wizard-1">
+    <div class="message">
+    <p><span class="arrow">&uarr;</span> ArrowUp to Begin</p>
+    </div>
+    <div class="score">
+        <span class="score_title"></span>
+        <span class="score_val"></span>
+    </div>
 </body>
 </html>
