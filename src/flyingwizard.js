@@ -91,7 +91,7 @@ function play(){
         wizard_dy = wizard_dy + grativy;
         document.addEventListener('keydown', (e) => {
             if(e.key == 'ArrowUp' || e.key == ' '){
-                img.src = 'assetsg/Wizard-2.png';
+                img.src = 'assets/Wizard-2.png';
                 wizard_dy = -7.6;
             }
         });
