@@ -6,8 +6,8 @@ let wizard = document.querySelector('.wizard');
 let img = document.getElementById('wizard-1');
 
 // Sound effects for scoring points and dying
-let sound_point = new Audio('/doca/sound_point.mp3');
-let sound_die = new Audio('/docs/sound_dies.mp3');
+let sound_point = new Audio('assets/sound_point.mp3');
+let sound_die = new Audio('assets/sound_dies.mp3');
 
 // Getting bounding box properties of the wizard element
 let wizard_props = wizard.getBoundingClientRect();
@@ -91,14 +91,14 @@ function play(){
         wizard_dy = wizard_dy + grativy;
         document.addEventListener('keydown', (e) => {
             if(e.key == 'ArrowUp' || e.key == ' '){
-                img.src = '/docs/Wizard-2.png';
+                img.src = 'assetsg/Wizard-2.png';
                 wizard_dy = -7.6;
             }
         });
 
         document.addEventListener('keyup', (e) => {
             if(e.key == 'ArrowUp' || e.key == ' '){
-                img.src = '/docs/Wizard.png';
+                img.src = 'assets/Wizard.png';
             }
         });
 
